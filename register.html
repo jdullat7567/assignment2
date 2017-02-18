@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Register</title>
+  <meta name="description" content="Login">
+  <meta name="author" content="jaimal">
+
+  <link rel="shortcut icon" href="images/register-icon.ico" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="topDiv"></div>
+	<div class="wrapper">
+		<nav>
+			<div class="logo">
+				<img src="images/logo.png" align="middle" >
+			</div>
+			<ul class="menu">
+				<li><a href="index.html"> Dashboard</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a class="active" href="register.html"> Register</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</nav><!-- nav ends -->
+	</div><!-- wrapper ends -->
+	<div class="container">
+		<section id="content">
+			<form action="register.html" onsubmit="javascript:return CheckEntery(this);" method="get">
+				<h1>Register</h1>
+				<div class="username-container">
+					<div class="user-icon"><i class="fa fa-user fa-2x" aria-hidden="true"></i></div>
+					<input type="text" name="username" placeholder="Username"  id="username" />
+				</div>
+				<div class="email-container">
+					<div class="envelope-icon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+					<input type="email" name="email" placeholder="Email"  id="email" />
+				</div>
+				<div class="password-container">
+					<div class="password-icon"><i class="fa fa-key fa-2x" aria-hidden="true"></i></div>
+					<input type="password" name="password" placeholder="Password"  id="password" />
+				</div>
+				<div class="confirm-password-container">
+					<div class="password-icon"><i class="fa fa-key fa-2x" aria-hidden="true"></i></div>
+					<input type="password" name="confirmPassword" onkeyup="checkPass(); return false;" placeholder="Confirm Password" id="confirm-password" />
+					 <span id="confirmMessage" class="confirmMessage"></span>
+				</div>
+				<div>
+					<input type="submit" value="Register" />
+				</div>
+			</form><!-- form ends -->
+		</section><!-- content ends -->
+	</div><!-- container ends -->
+ 
+</body>
+ <script src="js/script.js"></script>
+</html>

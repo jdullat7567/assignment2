@@ -13,30 +13,31 @@
 
 </head>
 <body>
+<div class="topDiv"></div>
 	<div class="wrapper">
 		<nav>
-		
 			<div class="logo">
 				<img src="images/logo.png" align="middle" >
 			</div>
 			<ul class="menu">
 				<li><a href="index.html"> Dashboard</a></li>
-				<li><a href="login.html">Login</a></li>
+				<li><a class="active" href="login.html">Login</a></li>
 				<li><a href="register.html"> Register</a></li>
-				
 			</ul>
 			<div class="clearfix"></div>
 		</nav><!-- nav ends -->
 	</div><!-- wrapper ends -->
 	<div class="container">
 		<section id="content">
-			<form action="">
+			<form action="index.html">
 				<h1>Login</h1>
-				<div class="username>
-					<i class="fa fa-user fa-3x" aria-hidden="true"></i><input type="text" placeholder="Username" required="" id="username" />
+				<div class="username-container">
+					<div class="user-icon"><i class="fa fa-user fa-2x" aria-hidden="true"></i></div>
+					<input type="text" name="username" placeholder="Username" required="" id="username" />
 				</div>
-				<div class="password">
-					<input type="password" placeholder="Password" required="" id="password" />
+				<div class="password-container">
+					<div class="password-icon"><i class="fa fa-key fa-2x" aria-hidden="true"></i></div>
+					<input type="password" name="password" placeholder="Password" required="" id="password" />
 				</div>
 				<div>
 					<input type="submit" value="Log in" />
