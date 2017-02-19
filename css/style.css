@@ -1,0 +1,222 @@
+
+/*-------------- Defaut CSS ----------*/
+body {
+	background: #DCDDDF url(../images/background1.jpg);
+	color: #000;
+	font: 14px Arial;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+html, body {
+    overflow: auto;
+}
+ol, ul {
+	list-style: none;
+}
+.clearfix {
+	clear: both;
+}
+
+/*------------ Top Navigation Bar--------------*/
+.wrapper {
+	width: auto;
+	margin-top:0;
+}
+.logo {
+	float:left;
+	margin-left: 1.6em;
+}
+.logo img {
+	width:7em;
+}
+
+nav {
+	background-image: linear-gradient(#fff, #ccc);
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4);
+	padding: 0 10px;
+	position: relative;
+}
+
+.menu li {
+	float: left;
+	position: relative;
+}
+
+.right-menu li {
+	float: right;
+	position: relative;
+}
+
+.menu li a, .right-menu li a {
+	color: #444;
+	display: block;
+	font-size: 14px;
+	line-height: 23px;
+	padding: 6px 12px;
+	margin: 8px 8px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.menu li a:hover, .active ,.right-menu li a:hover{
+	background-image: linear-gradient(#ededed, #fff);
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+	color: #222;
+}
+
+.menu li:hover a, .right-menu li:hover a {
+	background-image: linear-gradient(#ccc, #ededed);
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+	color: #222;
+}
+
+.menu li:hover ul a {
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.menu li:hover ul li a:hover {
+	background-image: linear-gradient(#ededed, #fff);
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.3);
+}
+
+/*-------- Continer -----------*/
+.container { 
+	margin: 6em auto; 
+	position: relative; 
+	width: 900px; 
+}
+
+#content {
+	background: linear-gradient(#fff, #ccc);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 1px solid #c4c6ca;
+	margin: 0 auto;
+	padding: 25px 0 0;
+	position: relative;
+	text-align: center;
+	text-shadow: 0 1px 0 #fff;
+	width: 400px;
+}
+
+\
+#content h1 {
+	color: #7E7E7E;
+	font: bold 25px Helvetica, Arial, sans-serif;
+	letter-spacing: -0.05em;
+	line-height: 20px;
+	margin: 10px 0 30px;
+}
+#content h1:before,
+#content h1:after {
+	content: "";
+	height: 1px;
+	position: absolute;
+	top: 10px;
+	width: 27%;
+}
+#content h1:after {
+	background: rgb(126,126,126);
+    right: 0;
+}
+#content h1:before {
+	background: rgb(126,126,126);
+    left: 0;
+}
+
+#content form { 
+	margin: 0 20px; 
+	position: relative 
+}
+
+.username-container, .password-container, .confirm-password-container, .email-container {
+	 position:relative;
+}
+.user-icon, .password-icon , .envelope-icon {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    min-width: 16px;
+    padding: 4px 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0 1px 0 #ffffff;
+    position:absolute;
+    left:14px;
+    top:5px;
+    bottom:3px;
+    z-index:3;
+}
+
+#content form input[type="text"],
+#content form input[type="email"],
+#content form input[type="password"] {
+	border-radius: 3px;
+	box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	border: 1px solid #c8c8c8;
+	color: #777;
+	font: 13px Helvetica, Arial, sans-serif;
+	margin: 0 0 10px;
+	padding: 15px 10px 15px 40px;
+	width: 80%;
+}
+
+
+#content form input[type="text"]:focus,
+#content form input[type="email"]:focus,
+#content form input[type="password"]:focus {
+	box-shadow: 0 0 2px #ed1c24 inset;
+	background-color: #fff;
+	border: 1px solid #ed1c24;
+	outline: none;
+}
+#username { 
+	background-position: 10px 10px !important 
+}
+#password { 
+	background-position: 10px -53px !important 
+	}
+#content form input[type="submit"] {
+	background: rgb(255, 159, 82);
+	border-radius: 8px;
+	border: 1px solid #D69E31;
+	color: #85592e;
+	cursor: pointer;
+	float: left;
+	font: bold 15px Helvetica, Arial, sans-serif;
+	height: 35px;
+	margin: 20px 0 35px 11px;
+	position: relative;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	width: 81px;
+}
+#content form input[type="submit"]:hover {
+	background: rgb(254,193,81);
+}
+#content form div a {
+	color: #004a80;
+    float: right;
+    font-size: 16px;
+    margin: 30px 15px 0 0;
+    text-decoration: none;
+}
+#content form div a:hover {
+    text-decoration: underline;
+}
+form:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+
+/*---------- Footer-----------*/
