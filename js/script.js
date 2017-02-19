@@ -1,17 +1,38 @@
-function getTransactionCategorty(){
+function getTransactionCategory(){
 	
 	return[
 	{
-		id:1,
-		name: 'Food
+		"id":1,
+		"name": "Food"
 	},
 	{
-		id=2,
-		name: 'Home'
+		"id":2,
+		"name": "Home"
 	}
-	
 	]
-}
+};
+
+function getTransactionData()
+{
+	return [
+	{
+		"id":1,
+		"transactionID":"TX121331",
+		"Category":"Food",
+		"Location":"Kitchener",
+		"Date":"Jan-26,2017"
+	},
+	{
+		"id":1,
+		"transactionID":"TX125675",
+		"Category":"Home",
+		"Location":"Waterloo",
+		"Date":"Jan-28,2017"
+	}
+	]
+};
+
+
 
 
 

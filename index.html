@@ -33,7 +33,7 @@
 	<div class="container">
 		<section id="content">
 			
-			<table>
+			<table id="transactionTable">
 				<tr>
 					<th>Serial No.</th>
 					<th>Transaction ID</th>
@@ -52,4 +52,21 @@
 </body>
 
  <script src="js/script.js"></script>
+  <script>
+	(function(){
+	getTransactionCategory().forEach(function(item,index)
+	{
+		//alert(item.name);
+	});
+	
+	// Extract values for table header
+	var columns = [];
+	
+	
+	getTransactionData().forEach(function(item,index)
+	{
+			myCreateFunction();
+	});
+	})();
+ </script>
 </html>
