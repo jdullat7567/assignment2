@@ -43,7 +43,12 @@ nav {
 	position: relative;
 }
 
-.menu li a {
+.right-menu li {
+	float: right;
+	position: relative;
+}
+
+.menu li a, .right-menu li a {
 	color: #444;
 	display: block;
 	font-size: 14px;
@@ -54,14 +59,14 @@ nav {
 	text-decoration: none;
 }
 
-.menu li a:hover, .active {
+.menu li a:hover, .active ,.right-menu li a:hover{
 	background-image: linear-gradient(#ededed, #fff);
 	border-radius: 12px;
 	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
 	color: #222;
 }
 
-.menu li:hover a {
+.menu li:hover a, .right-menu li:hover a {
 	background-image: linear-gradient(#ccc, #ededed);
 	border-radius: 12px;
 	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);

@@ -1,3 +1,21 @@
+function getTransactionCategorty(){
+	
+	return[
+	{
+		id:1,
+		name: 'Food
+	},
+	{
+		id=2,
+		name: 'Home'
+	}
+	
+	]
+}
+
+
+
+/*
 function CheckEntery(form)
 {
 	var errorMessage = "";
@@ -20,5 +38,8 @@ function checkUsername(username)
 {
 	if(username.trim().length == 0)
 	{
+		return false;
 	}
+	
 }
+*/
